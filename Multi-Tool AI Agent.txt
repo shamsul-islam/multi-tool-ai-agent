@@ -1,0 +1,108 @@
+[Mod 17] Project: Building a Multi-Tool AI Agent to Interact
+🧠 Assignment: Building a Multi-Tool AI Agent to Interact with Medical Datasets and Web
+🎯 Objective:
+You will build a Multi-Tool OpenAI Agent that can:
+
+Answer data-specific queries from three medical datasets (Heart Disease, Cancer, Diabetes)
+
+
+Use a Web Search Tool for general medical knowledge (e.g., definitions, symptoms, cures)
+
+
+📁 Provided Datasets:
+Use the following public medical datasets:
+
+Heart Disease Dataset
+ 🔗 https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset
+
+
+Cancer Prediction Dataset
+ 🔗 https://www.kaggle.com/datasets/rabieelkharoua/cancer-prediction-dataset
+
+
+Diabetes Dataset
+ 🔗 https://www.kaggle.com/datasets/mathchi/diabetes-data-set
+
+
+🛠️ Project Tasks:
+✅ 1. Convert CSVs to SQLite DBs
+For each dataset, create a SQLite database.
+
+
+Name the DBs:
+
+
+
+heart_disease.db
+
+
+cancer.db
+
+
+diabetes.db
+
+
+Ensure that table names are meaningful and column types are set correctly.
+
+
+✅ 2. Build DB-specific Agents (Tools)
+For each DB, build a tool using the OpenAI Agent SDK +Langchain Agent that can:
+
+Connect to the corresponding database
+
+
+Execute user questions via SQL
+
+
+Return the result in natural language
+
+
+Tools to implement:
+
+HeartDiseaseDBTool
+
+
+CancerDBTool
+
+
+DiabetesDBTool
+
+
+✅ 3. Add a Web Search Tool
+Create a tool named MedicalWebSearchTool that uses:
+
+An API like SerpAPI, Tavily, or Bing 
+
+Use this tool only for general medical knowledge.
+
+✅ 4. Main AI Agent Logic
+Build a main AI Agent using OpenAI’s Agent SDK + Langchain Agen Executor.
+
+
+It should route the question to the appropriate tool:
+
+
+
+🧠 If the question is about statistics, data, or numbers, it should use the appropriate DB tool.
+
+
+🌐 If the question is about definition, symptoms, or cure, it should use the Web Search tool.
+
+
+📦 Submission Requirements:
+
+Github Repo Full code base
+
+
+README with instructions on how to run.
+
+
+You can also give Collab Link
+
+সাবমিশনের গাইডলাইন
+
+●Github Repo Full code base
+
+●README with instructions on how to run.
+
+●You can also give Collab Link
