@@ -49,9 +49,16 @@ python main.py
 
 The agent will then prompt you to ask a medical question.
 
-## Google Colab Instructions
+## Running in Google Colab
 
-1. Upload the entire project folder to your Google Drive.
-2. Open the `main.py` file in Google Colab.
-3. Make sure to set the `TAVILY_API_KEY` in the Colab environment.
-4. You can run the setup steps in Colab cells.
+You can run this project directly in Google Colab.
+
+1.  **Open in Colab:**
+    Open the `Multi_Tool_AI_Agent_Colab.ipynb` file in Google Colab. You can do this directly from GitHub.
+
+2.  **Run the cells:**
+    Execute the cells in the notebook in order. The notebook will:
+    *   Clone the repository.
+    *   Install the required dependencies.
+    *   Set up the environment.
+    *   Run the AI agent.
