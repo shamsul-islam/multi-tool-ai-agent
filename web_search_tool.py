@@ -8,16 +8,7 @@ TAVILY_API_KEY = os.environ.get("TAVILY_API_KEY")
 
 def medical_web_search(query: str):
     if not TAVILY_API_KEY:
-        # Fallback to google_web_search if Tavily API key is not available
-        try:
-            # This is a placeholder for the actual tool call
-            # In a real scenario, you would import and call the tool function
-            from agent_tools import google_web_search
-            return google_web_search(query)
-        except ImportError:
-            return "Google web search tool not available."
-        except Exception as e:
-            return f"An error occurred with Google web search: {e}"
+        return "Tavily API key not set. Please set the TAVILY_API_KEY environment variable."
 
     try:
         client = TavilyClient(api_key=TAVILY_API_KEY)
